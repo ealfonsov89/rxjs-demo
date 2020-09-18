@@ -7,7 +7,8 @@
   },
   "files": [
     "src/main.ts",
-    "src/polyfills.ts"
+    "src/polyfills.ts",
+    "./src/app/task-form/date-range/NewType.ts"
   ],
   "include": [
     "src/**/*.d.ts"

@@ -1,0 +1,7 @@
+<form *ngIf="form" [formGroup]="form">
+  <select formControlName="selector">
+    <option *ngFor="let user of users$ | async" [ngValue]="user">
+      {{ user.name }}
+    </option>
+  </select>
+</form>

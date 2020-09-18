@@ -1,0 +1,3 @@
+<app-users-selector (userSelected)="user = $event"></app-users-selector>
+<app-date-range (dateRange)="dateRange = $event"></app-date-range>
+<app-task-table *ngIf="user" [user]="user" [dateRange]="dateRange" ></app-task-table>

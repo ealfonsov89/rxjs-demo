@@ -1,0 +1,19 @@
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Date</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let task of tasks$ | async">
+      <tr>
+        <td>{{ task.id }}</td>
+        <td>{{ task.date | date}}</td>
+        <td>{{ task.title }}</td>
+      </tr>
+      <tr><td colspan="3">{{ task.description }}</td></tr>
+    </ng-container>
+  </tbody>
+</table>
